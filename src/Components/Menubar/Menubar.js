@@ -1,10 +1,20 @@
 import React from 'react';
+import './Menubar.css'
 
-const Menubar = (props) => {
-    const {country} = props;
+const Menubar = () => {
+
     return (
         <div>
-            <h1>{country}</h1>
+            <div className="container d-flex">
+                <div className="col-md-2">Logo</div>
+                <div className="col-md-10 d-flex menu-container">
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>Cart</li>
+                    <li>Login</li>
+                </div>
+            </div>
+
         </div>
     );
 };
