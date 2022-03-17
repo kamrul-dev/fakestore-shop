@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Allproducts.css'
 
+// load data from api
 const Allproducts = () => {
     const [products, setProducts] = useState([]);
     console.log(products);
