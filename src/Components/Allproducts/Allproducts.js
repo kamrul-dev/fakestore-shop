@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Singleproduct from '../Singleproduct/Singleproduct';
 import './Allproducts.css'
 
 // load data from api
@@ -13,6 +14,12 @@ const Allproducts = () => {
     return (
         <div>
             <h1>All products</h1>
+            {
+                products.map(product => <Singleproduct
+                    product={product}
+                    key={product.id}
+                ></Singleproduct>)
+            }
         </div>
     );
 };
