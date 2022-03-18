@@ -7,7 +7,7 @@ const Singleproduct = (props) => {
     return (
         <div className='col-md-4'>
             <div className="card p-3 border">
-                <img className='w-50' src={image} alt="" />
+                <img className='w-50 m-auto' src={image} alt="" />
                 <h1>{title.slice(0, 10)}</h1>
                 <div className='d-flex justify-content-around'>
                     <button className='btn btn-success'>Add to Cart</button>
