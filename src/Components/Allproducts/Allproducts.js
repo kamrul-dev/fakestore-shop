@@ -3,7 +3,8 @@ import Singleproduct from '../Singleproduct/Singleproduct';
 import './Allproducts.css'
 
 // load data from api
-const Allproducts = () => {
+const Allproducts = (props) => {
+    const { setCartCount } = props;
     const [products, setProducts] = useState([]);
     console.log(products);
     useEffect(() => {
@@ -19,6 +20,7 @@ const Allproducts = () => {
                     products.map(product => <Singleproduct
                         product={product}
                         key={product.id}
+                        setCartCount={setCartCount}
                     ></Singleproduct>)
                 }
             </div>
