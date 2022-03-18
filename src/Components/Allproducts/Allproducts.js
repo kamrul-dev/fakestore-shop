@@ -13,7 +13,7 @@ const Allproducts = (props) => {
             .then(data => setProducts(data))
     }, [products])
     return (
-        <div>
+        <div className='container'>
             <h1>All products</h1>
             <div className='row'>
                 {

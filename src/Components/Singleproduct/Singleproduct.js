@@ -8,7 +8,7 @@ const Singleproduct = (props) => {
     const { title, image } = props.product;
     const { setCartCount } = props;
     return (
-        <div className='col-md-4'>
+        <div className='col-md-4 col-lg-3'>
             <div className="card p-3 border">
                 <img className='w-50 m-auto' src={image} alt="" />
                 <h1>{title.slice(0, 10)}</h1>
