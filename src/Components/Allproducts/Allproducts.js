@@ -6,7 +6,7 @@ import './Allproducts.css'
 const Allproducts = (props) => {
     const { setCartCount } = props;
     const [products, setProducts] = useState([]);
-    console.log(products);
+    // console.log(products);
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())

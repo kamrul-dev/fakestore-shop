@@ -4,6 +4,7 @@ import './App.css';
 import Menubar from './Components/Menubar/Menubar';
 import Allproducts from './Components/Allproducts/Allproducts';
 import { useState } from 'react';
+import "aos/dist/aos.css"
 
 function App() {
   const [count, setCount] = useState(0);
