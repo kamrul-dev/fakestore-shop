@@ -2,6 +2,7 @@ import './Singleproduct.css'
 
 import React from 'react';
 
+// Single products commponent from All products
 const Singleproduct = (props) => {
     const { title, image } = props.product;
     const {setCartCount} = props;

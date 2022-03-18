@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Singleproduct from '../Singleproduct/Singleproduct';
 import './Allproducts.css'
 
-// load data from api
+// load data from api create All products components and send data from this component to single component
 const Allproducts = (props) => {
     const { setCartCount } = props;
     const [products, setProducts] = useState([]);
