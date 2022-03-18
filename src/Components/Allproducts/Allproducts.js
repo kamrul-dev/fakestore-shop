@@ -14,7 +14,7 @@ const Allproducts = () => {
     return (
         <div>
             <h1>All products</h1>
-            <div className='row container mx-auto'>
+            <div>
                 {
                     products.map(product => <Singleproduct
                         product={product}
