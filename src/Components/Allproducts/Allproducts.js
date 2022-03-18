@@ -10,11 +10,11 @@ const Allproducts = () => {
         fetch('https://fakestoreapi.com/products')
             .then(res => res.json())
             .then(data => setProducts(data))
-    }, [])
+    }, [products])
     return (
         <div>
             <h1>All products</h1>
-            <div>
+            <div className='row container mx-auto'>
                 {
                     products.map(product => <Singleproduct
                         product={product}
