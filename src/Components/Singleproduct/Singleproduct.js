@@ -1,6 +1,7 @@
 import './Singleproduct.css'
 
 import React from 'react';
+import ReactModal from '../ReactModal/ReactModal';
 
 // Single products commponent from All products
 const Singleproduct = (props) => {
@@ -14,7 +15,7 @@ const Singleproduct = (props) => {
                 <div className='d-flex justify-content-around'>
                     <button onClick={setCartCount} className='btn btn-success'>Add to Cart</button>
                     <button className='btn btn-danger'>Delete</button>
-                    <button className='btn btn-danger'>Details</button>
+                    <ReactModal></ReactModal>
                 </div>
             </div>
         </div>
