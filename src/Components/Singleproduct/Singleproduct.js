@@ -6,7 +6,7 @@ import ReactModal from '../ReactModal/ReactModal';
 // Single products commponent from All products
 const Singleproduct = (props) => {
     const { title, image } = props.product;
-    const {setCartCount} = props;
+    const { setCartCount } = props;
     return (
         <div className='col-md-4'>
             <div className="card p-3 border">
@@ -15,7 +15,7 @@ const Singleproduct = (props) => {
                 <div className='d-flex justify-content-around'>
                     <button onClick={setCartCount} className='btn btn-success'>Add to Cart</button>
                     <button className='btn btn-danger'>Delete</button>
-                    <ReactModal></ReactModal>
+                    <ReactModal product={props.product}></ReactModal>
                 </div>
             </div>
         </div>

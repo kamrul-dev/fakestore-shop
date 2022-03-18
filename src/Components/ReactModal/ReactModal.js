@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 
-const ReactModal = () => {
+const ReactModal = (props) => {
+    const {title, image, price, description} = props.product;
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -14,9 +15,10 @@ const ReactModal = () => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <img className='w-50' src={image} alt="" />
+                    <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body><h3>Price: {price}</h3> {description}</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
